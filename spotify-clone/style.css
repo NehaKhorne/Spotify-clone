@@ -1,0 +1,347 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #121111d2;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    /* width: 100vh; */
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color:#000000;
+    width: 350px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+
+}
+.main-content{
+    background-color: #000000d2;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 75px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121111d2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+ .nav-option{
+    background-color: #121111d2;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option1{
+    background-color: #121111d2;
+    line-height: 1.75rem;
+    /* opacity: 0.7; */
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+}
+.nav-option i{
+    background-color: #121111d2;
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    background-color: #121111d2;
+    font-size: 0.9rem;
+    margin: 1rem;
+}
+.library{
+    background-color: #121111d2;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    background-color: #121111d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    background-color: #282424d2;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.lib-option a{
+    background-color: #121111d2;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+    margin-right: 1rem;
+}
+.box{
+    background-color: #232323;
+    height: 7rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.5rem 1rem;
+}
+.lib-box{
+    background-color:#121111d2  ;
+    /* margin: 10px;
+    border: 2px solid #282323d2;
+    box-shadow: 10px;
+    border-radius: 11px;  */
+}
+
+.box-p1 {
+    background-color: #282323d2;
+    font-size: 1rem;
+    font-weight:500;
+}
+.box-p2 {
+    background-color: #282424d2;
+    color: white;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border:none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    color: black;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 100;
+}
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+.sticky-nav-options {
+    margin-right: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight:600;
+    background-color: #232323;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity:0.5 ;
+    padding-top: 10px;
+    background-color: #232323;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000000; */
+}
+.album{
+    width: 25%;
+    /* background-color: pink; */
+}
+.player{
+    width: 50%;
+    /* background-color: aquamarine; */
+    background-color: #000000;
+}
+.controls{
+    width:25%;
+    background-color: rgb(0, 0, 0);
+}
+.player-controls{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right:1.75rem ;
+    opacity: 0.7;
+    background-color: #000000;
+}
+.player-control-icon:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: #000000;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: #000000;
+}
+.curr-time{
+    background-color: #000000;
+}
+.total-time{
+    background-color: #000000;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #7572724f;
+    border-radius:100px ;
+    height: 0.7rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 50%;
+    margin-top:-3px ;
+}
+.album{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #000000;
+}
+.album-img{
+    height: 4rem;
+    width: 5rem;
+}
+.album-p1{
+    line-height: 2rem;
+    margin-left: 1rem;
+    background-color: transparent;
+}
+.p2{
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+.album-heart{
+    background-color: black;
+    margin-left: 4rem;
+    padding:0.5rem 0 ;
+}
+.album-heart1{
+    background-color: rgb(0, 0, 0);
+    margin-right: 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.album-share{
+    background-color: black;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.album-heart1:hover{
+    opacity: 1;
+}
+.album-share:hover{
+    opacity: 1;
+}
+.controls{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding-left: 1rem;
+}
+.play1-btn{
+    background-color: black;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.speaker{
+    background-color: black;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.vol{
+    background-color: black;
+    margin-top: 1rem;
+}
+.progress1-bar{
+    background-color: black;
+    margin-top: 1rem;
+}
